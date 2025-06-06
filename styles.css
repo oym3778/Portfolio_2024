@@ -3,12 +3,26 @@
 }
 
 * {
+    font-family: "Karla", sans-serif;
+    /* Karla para */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* #About {
+h1:not(#header-nav),
+h2,
+h3 {
+    font-size: 75px;
+    font-family: "Fredoka", sans-serif;
+}
+p{
+    /* letter-spacing: 0.3px; */
+    font-size: 20px; /* Adjust size for readability */
+    line-height: 1.6; /* Improves spacing between lines */
+}
+
+#About {
     background-color: blue;
 }
 
@@ -22,19 +36,15 @@
 
 #Contact {
     background-color: yellow;
-} */
+}
 
 body {
     background-color: #C5C184;
 }
+
 html {
-    /* height: 100vh;
-    margin: 0; */
-    /* width: 100vw; */
     scroll-snap-type: y proximity;
     scroll-padding-top: var(--nav-bar-height);
-    /* scroll-padding-bottom: var(--nav-bar-height); */
-    /* overflow-y: scroll; */
 }
 
 /* #snap-container {
@@ -45,7 +55,7 @@ html {
 } */
 
 .snap-section {
-    height: 100vh;
+    height: calc(100vh - var(--nav-bar-height));
     /* width: 100vw; */
     scroll-snap-align: start;
     scroll-padding-top: var(--nav-bar-height);
@@ -71,12 +81,9 @@ header {
 
 header h1 {
     width: 40%;
-    /* padding-left: 50px;
-    padding-right: 50px; */
 }
 
 #main-nav {
-    /* flex-grow: 1; */
     width: 60%;
     max-width: 1000px;
     display: flex;
@@ -90,7 +97,60 @@ header h1 {
 /*             BODY            */
 /* --------------------------- */
 
+/* ------------ Home ------------*/
+#Home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
 
+}
+
+/* TODO Add a media query for the photo, might be easier than trying 
+    to get this to work for all */
+#selfie {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 20px double black;
+}
+
+/* ------------ About ------------*/
+#About {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-text {
+    padding: 50px;
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto 0;
+}
+.smile {
+    font-size: 30px;
+}
+
+#about-text h2 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#about-text p {
+    padding-bottom: 50px;
+    text-indent: 5ch;
+}
+
+#resume {
+    display: none;
+    padding-left: 50px;
+    width: 100%;
+    height: 50%;
+}
 
 /* --------------------------- */
 /*            FOOTER           */
