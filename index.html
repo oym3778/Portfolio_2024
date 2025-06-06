@@ -12,64 +12,77 @@
     <header>
         <h1>Omar's Portfolio</h1>
         <nav id="main-nav">
-            <p>Home</p>
-            <p>About</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <a href="#Home">
+                <p>Home</p>
+            </a>
+            <a href="#About">
+                <p>About</p>
+            </a>
+            <a href="#Projects">
+                <p>Projects</p>
+            </a>
+            <a href="#Contact">
+                <p>Contact</p>
+            </a>
         </nav>
     </header>
     <main>
-        <div id="side-nav">
+        <!-- still playing around with potentially having this side nav... -->
+        <!-- <div id="side-nav">
             <img class="logo" src="" alt="linkedIn">
             <img class="logo" src="" alt="github">
+        </div> -->
+        <div id="snap-container">
+            <section id="Home" class="snap-section">
+                <img id="selfie" src="assets/images/selfie.jpg" alt="omar" width="100">
+                <h1>Hey, I'm Omar Morales-Saez</h1>
+                <p>Welcome to my portfolio!</p>
+            </section>
+            <section id="About" class="snap-section">
+                <embed id="resume" src="assets/images/Omar Morales-Saez Resume.pdf" width="200px" height="200px" />
+                <div id="about-text">
+                    <h2>About<span><img src="" alt="Squirrel"></span></h2>
+                    <p>WHO AM I???? Well, I'm a graduate from RIT with a degree in
+                        Game Design and a passion for Software Development. I went to RIT
+                        with a love for coding and since then that passion went from making
+                        games to anything software! I love the software process. I love getting a problem and
+                        figuring out the most efficient way to solve it. Especially if it's a hard one—it's like having
+                        a
+                        pickle jar and everyone's trying to open it but can't, and then you come around and BOOM, it's
+                        open and everyones super impressed... anyway...</p>
+
+                    <p>I've spent the past 4 years trying to learn all
+                        I can about software and finally I want to put that work to use. Here
+                        is my portfolio! Stay a bit and check out some of the projects I'm
+                        working on <span class="smile">:)</span>. If you're an employer or someone stopping by to visit,
+                        feel free to reach out—I'd love to talk about any of my projects or
+                        even this portfolio. Thanks for stopping by!</p>
+
+                </div>
+            </section>
+            <section id="Projects" class="snap-section">
+                <h2>Projects</h2>
+                <div id="my-projects">
+                    <div class="project-div">X</div>
+                    <div class="project-div">X</div>
+                    <div class="project-div">X</div>
+                </div>
+            </section>
+            <section id="Contact" class="snap-section">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name<input type="text" name="name" id="name"></label>
+                    <label for="email">Email<input type="email" name="email" id="email"></label>
+                    <label for="message">Message<textarea rows="5" cols="80" id="message"></textarea></label>
+
+                    <input type="submit" name="submit" id="submit" value="Send!">
+                </form>
+            </section>
         </div>
-        <section id="Home">
-            <img id="selfie" src="assets/images/selfie.jpg" alt="omar" width="100">
-            <h1>Hey, I'm Omar Morales-Saez</h1>
-            <p>Welcome to my portfolio!</p>
-        </section>
-        <section id="About">
-            <embed id="resume" src="assets/images/Omar Morales-Saez Resume.pdf" width="200px" height="200px" />
-            <div id="about-text">
-                <h2>About<span><img src="" alt="Squirrel"></span></h2>
-                <p>WHO AM I???? Well, I'm a graduate from RIT with a degree in
-                    Game Design and a passion for Software Development. I went to RIT
-                    with a love for coding and since then that passion went from making
-                    games to anything software! I love the software process. I love getting a problem and
-                    figuring out the most efficient way to solve it. Especially if it's a hard one—it's like having a
-                    pickle jar and everyone's trying to open it but can't, and then you come around and BOOM, it's
-                    open and everyones super impressed... anyway...</p>
 
-                <p>I've spent the past 4 years trying to learn all
-                    I can about software and finally I want to put that work to use. Here
-                    is my portfolio! Stay a bit and check out some of the projects I'm
-                    working on <span class="smile">:)</span>. If you're an employer or someone stopping by to visit,
-                    feel free to reach out—I'd love to talk about any of my projects or
-                    even this portfolio. Thanks for stopping by!</p>
-
-            </div>
-        </section>
-        <section id="Projects">
-            <h2>Projects</h2>
-            <div id="my-projects">
-                <div class="project-div">X</div>
-                <div class="project-div">X</div>
-                <div class="project-div">X</div>
-            </div>
-        </section>
-        <section id="Contact">
-            <h2>Contact</h2>
-            <form action="">
-                <label for="name">Name<input type="text" name="name" id="name"></label>
-                <label for="email">Email<input type="email" name="email" id="email"></label>
-                <label for="message">Message<textarea rows="5" cols="80" id="message"></textarea></label>
-            
-                <input type="submit" name="submit" id="submit" value="Send!">
-            </form>
-        </section>
     </main>
     <footer>
-        <h3>Omar Morales-Saez</h3>        
+        <h3>Omar Morales-Saez</h3>
     </footer>
 </body>
 

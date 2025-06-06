@@ -1,4 +1,97 @@
+:root {
+    --nav-bar-height: 75px;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* #About {
+    background-color: blue;
+}
+
+#Home {
+    background-color: green;
+}
+
+#Projects {
+    background-color: pink;
+}
+
+#Contact {
+    background-color: yellow;
+} */
+
+body {
+    background-color: #C5C184;
+}
+html {
+    /* height: 100vh;
+    margin: 0; */
+    /* width: 100vw; */
+    scroll-snap-type: y proximity;
+    scroll-padding-top: var(--nav-bar-height);
+    /* scroll-padding-bottom: var(--nav-bar-height); */
+    /* overflow-y: scroll; */
+}
+
+/* #snap-container {
+    height: 90vh;
+    scroll-snap-type: proximity;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+} */
+
+.snap-section {
+    height: 100vh;
+    /* width: 100vw; */
+    scroll-snap-align: start;
+    scroll-padding-top: var(--nav-bar-height);
+    /* scroll-padding-bottom: var(--nav-bar-height); */
+    /* font-size: 2rem; */
+}
+
+/* --------------------------- */
+/*          HEADING            */
+/* --------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6A932D;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    height: var(--nav-bar-height);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header h1 {
+    width: 40%;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+#main-nav {
+    /* flex-grow: 1; */
+    width: 60%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+/* --------------------------- */
+/*             BODY            */
+/* --------------------------- */
+
+
+
+/* --------------------------- */
+/*            FOOTER           */
+/* --------------------------- */
