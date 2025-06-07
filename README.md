@@ -1,3 +1,5 @@
+Portfolio: https://people.rit.edu/oym3778/omar-portfolio/
+
 Welcome to my **Portfolio 2024** website!  
 This site showcases my best projects and demonstrates my skills as a **web developer**. I aim to highlight my passion for creativity and technical expertise in web development.
 
@@ -29,7 +31,7 @@ This portfolio is **not affiliated with or endorsed by Studio Ghibli** in any wa
 If you'd like to connect, feel free to reach out:  
 📧 Email: [...]  
 🔗 LinkedIn: [https://www.linkedin.com/in/omar-morales-402b7a200/]  
-🌐 Website: [TBA]
+🌐 Website: [https://people.rit.edu/oym3778/omar-portfolio/]
 
 
 
