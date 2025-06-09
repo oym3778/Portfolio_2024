@@ -1,6 +1,6 @@
 Portfolio: https://people.rit.edu/oym3778/omar-portfolio/
 
-CURRENTLY MADE FOR A **1905x4385 WIDTHxHEIGHT**
+CURRENTLY MADE FOR A **1905x4385 HEIGHTxWIDTH**
 
 responiveness coming soon....
 
