@@ -1,0 +1,91 @@
+:root {
+    /* 🌿 Base Colors */
+    --color-bg-main: #1e1b16;
+    --color-bg-elevated: #2b2a23;
+    --color-border: #4b4a3d;
+
+    /* 🖋 Text */
+    --color-text-heading: #d2f1d0;
+    --color-text-body: #f3ede1;
+
+    /* 🍂 Accent Colors */
+    --color-accent-green: #88c07f;
+    --color-accent-brown: #a47149;
+    --color-accent-olive: #8f9779;
+    --color-link: #a5d6a7;
+    --color-link-hover: #c8e6c9;
+    
+    /* 🌄 Section Backgrounds – Softer Nature Contrast */
+    --section-bg-1: #3a4a3f; /* 🌲 Forest shadow – calm green-gray base (Home) */
+    --section-bg-2: #4e4b3e; /* 🍂 Earth bark – warm dark khaki (About) */
+    --section-bg-3: #475e47; /* 🌿 Laurel green – neutral green-gray (Projects) */
+    --section-bg-4: #405548; /* 🌱 Fern shadow – slightly richer green (Contact) */
+
+    /* header/divider */
+    --color-divider: #3a3a30;
+    --header-bg: #3e5c3a; /* 🍃 Mossy evergreen — balanced and calm */
+
+    /* 🧪 Buttons */
+    --btn-bg: #3e5c3a;
+    --btn-bg-hover: #527d51;
+    --btn-text: #f3f9f2;
+}
+
+#About {
+    background-color: var(--section-bg-2);
+}
+
+#Home {
+    background-color: var(--section-bg-1);
+}
+
+#Projects {
+    background-color: var(--section-bg-3);
+}
+
+#Contact {
+    background-color: var(--section-bg-4);
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-body);
+}
+
+#selfie {
+    border: 20px double var(--header-bg);
+    /* animation: spin 10s ease-in-out infinite; */
+}
+
+header {
+    background-color: var(--header-bg);
+}
+
+#about-text {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-body);
+}
+
+.project-div {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-body);
+}
+
+input[type="submit"] {
+    background-color: var(--btn-bg);
+    border-bottom: 4px solid var(--color-border);
+    color: var(--btn-text);
+}
+
+#main-nav a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+#main-nav a:after {
+    color: transparent;
+}
+
+#main-nav a:hover {
+    color: var(--color-link-hover);
+}
