@@ -1,5 +1,9 @@
 Portfolio: https://people.rit.edu/oym3778/omar-portfolio/
 
+CURRENTLY MADE FOR A **1905x4385 WIDTHxHEIGHT**
+
+responiveness coming soon....
+
 Welcome to my **Portfolio 2024** website!  
 This site showcases my best projects and demonstrates my skills as a **web developer**. I aim to highlight my passion for creativity and technical expertise in web development.
 
