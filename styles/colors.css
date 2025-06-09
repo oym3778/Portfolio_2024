@@ -61,19 +61,29 @@ header {
     background-color: var(--header-bg);
 }
 
-#about-text {
+#about-text, form {
     background-color: var(--color-bg-elevated);
     color: var(--color-text-body);
 }
 
 .project-div {
-    background-color: var(--color-bg-elevated);
+    /* background-color: var(--color-bg-elevated); */
+    /* border-bottom: 20px ridge var(--color-bg-elevated);
+    border-top: 20px ridge var(--color-bg-elevated); */
+    border: 20px ridge var(--color-bg-elevated);
     color: var(--color-text-body);
+}
+.project-div-text {
+    background-color: var(--color-bg-elevated);
+}
+.project-logo {
+    /* background-color: var(--color-bg-elevated); */
+    /* border: 8px solid var(--color-border); */
 }
 
 input[type="submit"] {
     background-color: var(--btn-bg);
-    border-bottom: 4px solid var(--color-border);
+    /* border-bottom: 4px solid var(--color-border); */
     color: var(--btn-text);
 }
 

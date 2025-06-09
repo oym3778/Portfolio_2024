@@ -17,6 +17,10 @@ h3 {
     font-family: "Fredoka", sans-serif;
 }
 
+h3 {
+    font-size: 45px;
+}
+
 p {
     /* letter-spacing: 0.3px; */
     font-size: 20px;
@@ -79,39 +83,42 @@ header h1 {
 
 #main-nav a p {
     font-size: 30px;
-}  
+}
 
 /* stroke */
 #main-nav a {
-  position: relative;
+    position: relative;
 }
+
 #main-nav a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  background: #aaa;
-  height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    background: #aaa;
+    height: 1px;
 }
+
 #main-nav a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 #main-nav a {
-  transition: all 500ms;
+    transition: all 500ms;
 }
 
 #main-nav a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
 }
+
 #main-nav a:hover {
-  z-index: 1;
+    z-index: 1;
 }
 
 /* --------------------------- */
@@ -148,8 +155,9 @@ header h1 {
 
 #about-text {
     padding: 50px;
-    max-width: 700px;
-    margin: 0 auto 0;
+    width: 50%;
+    height: 80%
+        /* margin: 100px 0 100px; */
 }
 
 .smile {
@@ -161,9 +169,13 @@ header h1 {
     text-align: center;
 }
 
+#about-text p,
+.project-p {
+    text-indent: 5ch;
+}
+
 #about-text p {
     padding-bottom: 50px;
-    text-indent: 5ch;
 }
 
 #resume {
@@ -179,16 +191,16 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #my-projects {
-    height: 60%;
+    /* height: 60%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: space-evenly;
+    gap: 100px;
 }
 
 .project-div {
@@ -198,6 +210,7 @@ header h1 {
     align-items: center;
     height: 60%;
     width: 80vw;
+
 }
 
 .project-logo {
@@ -205,19 +218,22 @@ header h1 {
     max-width: 400px;
     height: 100%;
     max-height: 400px;
+    padding: 20px;
     /* object-fit: cover; */
 }
 
 .project-div-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 60%;
+    padding: 20px;
     height: 100%;
 }
 
 .project-title {
     /* height: 10%; */
+    text-align: center;
 }
 
 /* ------------ Contact ------------*/
@@ -239,7 +255,7 @@ form {
     justify-content: space-between;
     width: 50vw;
     height: 60vh;
-    /* padding: 20px; */
+    padding: 30px;
     margin: auto auto;
     /* height: 80%; */
 }
@@ -255,6 +271,7 @@ textarea {
     width: 100%;
     font-size: 20px;
 }
+
 .form-input label {
     font-size: 40px;
     font-family: "Fredoka", sans-serif;
@@ -263,15 +280,12 @@ textarea {
 
 input[type="submit"] {
     width: 50%;
+    height: 50px;
     cursor: pointer;
     transition: all 0.2s ease;
-    /* Tailwind's blue-500 */
     padding: 0.5rem 1.5rem;
-    /* py-2 px-6 */
     border-radius: 0.5rem;
-    /* rounded-lg */
     border: none;
-    /* blue-600 */
 }
 
 input[type="submit"]:hover {
