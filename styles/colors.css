@@ -42,6 +42,7 @@
 }
 
 #Home {
+    /* background: linear-gradient( 90deg, var(--color-link), var(--section-bg-1)); */
     background-color: var(--section-bg-1);
 }
 
@@ -112,7 +113,6 @@ a:after {
 /* .tech-stack a:hover{
     background-color: white;
 } */
-
 a:hover {
     color: var(--color-link-hover);
 }
