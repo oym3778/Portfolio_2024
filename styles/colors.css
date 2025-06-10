@@ -13,17 +13,23 @@
     --color-accent-brown: #a47149;
     --color-accent-olive: #8f9779;
     --color-link: #a5d6a7;
-    --color-link-hover: #c8e6c9;
-    
+    /* --color-link-hover: #c8e6c9; */
+    --color-link-hover: #c59100;
+
     /* 🌄 Section Backgrounds – Softer Nature Contrast */
-    --section-bg-1: #3a4a3f; /* 🌲 Forest shadow – calm green-gray base (Home) */
-    --section-bg-2: #4e4b3e; /* 🍂 Earth bark – warm dark khaki (About) */
-    --section-bg-3: #475e47; /* 🌿 Laurel green – neutral green-gray (Projects) */
-    --section-bg-4: #405548; /* 🌱 Fern shadow – slightly richer green (Contact) */
+    --section-bg-1: #3a4a3f;
+    /* 🌲 Forest shadow – calm green-gray base (Home) */
+    --section-bg-2: #4e4b3e;
+    /* 🍂 Earth bark – warm dark khaki (About) */
+    --section-bg-3: #475e47;
+    /* 🌿 Laurel green – neutral green-gray (Projects) */
+    --section-bg-4: #405548;
+    /* 🌱 Fern shadow – slightly richer green (Contact) */
 
     /* header/divider */
     --color-divider: #3a3a30;
-    --header-bg: #3e5c3a; /* 🍃 Mossy evergreen — balanced and calm */
+    --header-bg: #3e5c3a;
+    /* 🍃 Mossy evergreen — balanced and calm */
 
     /* 🧪 Buttons */
     --btn-bg: #3e5c3a;
@@ -52,16 +58,22 @@ body {
     color: var(--color-text-body);
 }
 
+
 #selfie {
     border: 20px double var(--header-bg);
     /* animation: spin 10s ease-in-out infinite; */
+}
+
+#my-name {
+    color: var(--color-link);
 }
 
 header {
     background-color: var(--header-bg);
 }
 
-#about-text, form {
+#about-text,
+form {
     background-color: var(--color-bg-elevated);
     color: var(--color-text-body);
 }
@@ -73,9 +85,11 @@ header {
     border: 20px ridge var(--color-bg-elevated);
     color: var(--color-text-body);
 }
+
 .project-div-text {
     background-color: var(--color-bg-elevated);
 }
+
 .project-logo {
     /* background-color: var(--color-bg-elevated); */
     /* border: 8px solid var(--color-border); */
@@ -87,15 +101,18 @@ input[type="submit"] {
     color: var(--btn-text);
 }
 
-#main-nav a {
+a {
     color: var(--color-link);
     text-decoration: none;
 }
 
-#main-nav a:after {
+a:after {
     color: transparent;
 }
+/* .tech-stack a:hover{
+    background-color: white;
+} */
 
-#main-nav a:hover {
+a:hover {
     color: var(--color-link-hover);
 }
