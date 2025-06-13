@@ -12,7 +12,8 @@
 
 h1:not(#header-nav),
 h2,
-h3, #my-name {
+h3,
+#my-name {
     font-size: 75px;
     font-family: "Fredoka", sans-serif;
 }
@@ -137,11 +138,18 @@ a {
 /* TODO Add a media query for the photo, might be easier than trying 
     to get this to work for all */
 #selfie {
-    width: 500px;
+    /* width: 500px; */
+    /* width: 50%; */
+    min-width: 500px;
+    max-width: 500px;
     height: 500px;
     object-fit: cover;
     border-radius: 50%;
     /* animation: spin 10s ease-in-out infinite; */
+}
+
+#home-text {
+    width: 50%;
 }
 
 /* ------------ About ------------*/
@@ -154,9 +162,7 @@ a {
 
 #about-text {
     padding: 50px;
-    width: 50%;
-    height: 80%
-        /* margin: 100px 0 100px; */
+    width: 860px;
 }
 
 .smile {
@@ -171,6 +177,11 @@ a {
 #about-text p,
 .project-p {
     text-indent: 5ch;
+}
+
+.project-p {
+    /* font-size: 100%; */
+    margin-bottom: 20px;
 }
 
 #about-text p {
@@ -193,12 +204,16 @@ a {
     justify-content: space-evenly;
 }
 
-.tech-stacks {
+.project-description {
+    height: 40%;
+}
+
+/* .tech-stacks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 50%;
+    height: 100%;
     justify-content: space-evenly;
     align-content: center;
     text-align: center;
@@ -209,16 +224,80 @@ a {
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
-}
+} */
 
 #wger_api {
     object-fit: cover;
 }
 
-.stack-text {
-    width: 150px;
-    height: 100px
+
+.tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
 }
+
+.stack-text {
+    display: flex;
+    /* make the <a> a flex container */
+    flex-direction: column;
+    /* will stack img on top of h4 */
+    align-items: center;
+    /* center content */
+    justify-content: space-around;
+    width: 150px;
+    height: 100%;
+    /* give more room for image + text */
+    text-decoration: none;
+    /* clean link style */
+    padding: 10px;
+}
+
+.stack-text img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    /* ensure logo fits nicely */
+}
+
+.stack-text h4 {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: inherit;
+}
+
+/* Hover effect on the whole <a> */
+.stack-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .stack-text {
+    display: block;
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 150px;
+    max-height: 200px;
+    width: 150px;
+    height: 100px;
+} */
 
 #my-projects {
     /* height: 60%; */
@@ -230,12 +309,16 @@ a {
 }
 
 .project-div {
+    justify-content: space-evenly;
+    width: 100%;
+
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: 60%;
-    width: 80vw;
+    /* width: 80vw; changed for responsivnesss */
 }
 
 .project-logo {
@@ -243,20 +326,30 @@ a {
     max-width: 400px;
     height: 100%;
     max-height: 400px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .video-container {
-  width: 400px;    /* or the width you want */
-  height: 400px;   /* adjust to your desired aspect ratio */
-  overflow: hidden; /* hide any excess edges */
+    width: 400px;
+    /* or the width you want */
+    height: 400px;
+    /* adjust to your desired aspect ratio */
+    overflow: hidden;
+    /* hide any excess edges */
+
+}
+
+.video-container:hover {
+    /* animation: zoom 5s linear infinite; */
 }
 
 .video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* fill container while maintaining aspect ratio */
-  object-position: center; /* center crop */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fill container while maintaining aspect ratio */
+    object-position: center;
+    /* center crop */
 }
 
 .project-div-text {
@@ -265,7 +358,7 @@ a {
     justify-content: space-between;
     width: 60%;
     padding: 20px;
-    height: 100%;
+    min-height: 400px;
 }
 
 .project-title {
@@ -351,7 +444,15 @@ input[type="submit"]:active {
     }
 }
 
-/* Keyframes */
+@keyframes zoom {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
 
 
 
@@ -362,7 +463,8 @@ footer {
     text-align: center;
     height: var(--nav-bar-height);
 }
+
 footer p {
-     padding-top: 20px;
-     opacity: 0.5;
+    padding-top: 20px;
+    opacity: 0.5;
 }

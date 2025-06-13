@@ -83,17 +83,19 @@ form {
     /* background-color: var(--color-bg-elevated); */
     /* border-bottom: 20px ridge var(--color-bg-elevated);
     border-top: 20px ridge var(--color-bg-elevated); */
-    border: 20px ridge var(--color-bg-elevated);
+    /* border: 20px ridge var(--color-bg-elevated); */
     color: var(--color-text-body);
 }
 
 .project-div-text {
     background-color: var(--color-bg-elevated);
+    border: 20px ridge var(--color-bg-elevated);
 }
 
 .project-logo {
     /* background-color: var(--color-bg-elevated); */
     /* border: 8px solid var(--color-border); */
+    border: 20px ridge var(--color-bg-elevated);
 }
 
 input[type="submit"] {
@@ -110,6 +112,7 @@ a {
 a:after {
     color: transparent;
 }
+
 /* .tech-stack a:hover{
     background-color: white;
 } */
