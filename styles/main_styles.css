@@ -18,6 +18,10 @@ h3,
     font-family: "Fredoka", sans-serif;
 }
 
+#my-name {
+    display: block;
+}
+
 h3 {
     font-size: 45px;
 }
@@ -135,8 +139,6 @@ a {
 
 }
 
-/* TODO Add a media query for the photo, might be easier than trying 
-    to get this to work for all */
 #selfie {
     /* width: 500px; */
     /* width: 50%; */
@@ -205,26 +207,8 @@ a {
 }
 
 .project-description {
-    height: 40%;
+    height: 60%;
 }
-
-/* .tech-stacks {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    align-content: center;
-    text-align: center;
-}
-
-
-.tech-stacks img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-} */
 
 #wger_api {
     object-fit: cover;
@@ -252,7 +236,7 @@ a {
     /* center content */
     justify-content: space-around;
     width: 150px;
-    height: 100%;
+    height: 110%;
     /* give more room for image + text */
     text-decoration: none;
     /* clean link style */
@@ -263,7 +247,6 @@ a {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    /* ensure logo fits nicely */
 }
 
 .stack-text h4 {
@@ -272,35 +255,12 @@ a {
     color: inherit;
 }
 
-/* Hover effect on the whole <a> */
 .stack-text:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* .stack-text {
-    display: block;
-    min-width: 150px;
-    min-height: 200px;
-    max-width: 150px;
-    max-height: 200px;
-    width: 150px;
-    height: 100px;
-} */
-
 #my-projects {
-    /* height: 60%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,14 +271,10 @@ a {
 .project-div {
     justify-content: space-evenly;
     width: 100%;
-
-
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     height: 60%;
-    /* width: 80vw; changed for responsivnesss */
 }
 
 .project-logo {
@@ -326,16 +282,12 @@ a {
     max-width: 400px;
     height: 100%;
     max-height: 400px;
-    /* padding: 20px; */
 }
 
 .video-container {
     width: 400px;
-    /* or the width you want */
     height: 400px;
-    /* adjust to your desired aspect ratio */
     overflow: hidden;
-    /* hide any excess edges */
 
 }
 
@@ -347,9 +299,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* fill container while maintaining aspect ratio */
     object-position: center;
-    /* center crop */
 }
 
 .project-div-text {
@@ -358,11 +308,10 @@ a {
     justify-content: space-between;
     width: 60%;
     padding: 20px;
-    min-height: 400px;
+    height: 400px;
 }
 
 .project-title {
-    /* height: 10%; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -371,12 +320,6 @@ a {
 #Contact h2 {
     text-align: center;
     padding: 50px 0;
-    /* width: 10px;; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; */
-    /* text-align: center; */
 }
 
 form {
@@ -384,11 +327,10 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
-    height: 60vh;
+    width: clamp(800px, 65%, 1000px);
+    height: 70%;
     padding: 30px;
     margin: auto auto;
-    /* height: 80%; */
 }
 
 .form-input {
@@ -406,7 +348,6 @@ textarea {
 .form-input label {
     font-size: 40px;
     font-family: "Fredoka", sans-serif;
-    /* margin-left: 10px; */
 }
 
 input[type="submit"] {
