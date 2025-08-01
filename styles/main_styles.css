@@ -48,7 +48,7 @@ html {
 } */
 
 .snap-section {
-    height: calc(100vh - var(--nav-bar-height));
+    min-height: calc(100vh - var(--nav-bar-height));
     /* width: 100vw; */
     scroll-snap-align: start;
     scroll-padding-top: var(--nav-bar-height);
@@ -198,12 +198,12 @@ a {
 }
 
 /* ------------ Projects ------------*/
-#Projects {
+/* #Projects {
     height: calc((100vh * 2) - var(--nav-bar-height));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+} */
+#project-header {
+    padding: 50px 0 50px;
+    text-align: center;
 }
 
 .project-description {
@@ -276,6 +276,9 @@ a {
     align-items: center;
     height: 60%;
 }
+.project-div:last-of-type {
+    margin-bottom: 100px;
+}
 
 .project-logo {
     width: 100%;
@@ -328,7 +331,7 @@ form {
     align-items: center;
     justify-content: space-between;
     width: clamp(800px, 65%, 1000px);
-    height: 70%;
+    height: 65vh;
     padding: 30px;
     margin: auto auto;
 }

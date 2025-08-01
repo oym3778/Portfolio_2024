@@ -124,9 +124,9 @@
 
 
 @media(max-height: 830px) {
-    #Projects {
+    /* #Projects {
         height: calc((100vh * 2) - var(--nav-bar-height) + 20vh);
-    }
+    } */
 
     #about-text p {
         font-size: 18px;
@@ -138,9 +138,9 @@
 }
 
 @media(max-height: 760px) {
-    #Projects {
+    /* #Projects {
         height: calc((100vh * 2) - var(--nav-bar-height) + 40vh);
-    }
+    } */
 
     #about-text p {
         font-size: 17px;
@@ -148,7 +148,7 @@
 }
 
 @media(max-height: 680px) {
-    #Projects {
+    /* #Projects {
         height: calc((100vh * 2) - var(--nav-bar-height) + 85vh);
-    }
+    } */
 }
